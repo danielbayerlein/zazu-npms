@@ -1,4 +1,4 @@
-# zazu-npms
+# zazu-npms [![Build Status](https://travis-ci.org/danielbayerlein/zazu-npms.svg?branch=master)](https://travis-ci.org/danielbayerlein/zazu-npms)
 
 > Zazu plugin to search for npm packages with [npms.io](https://npms.io/)
 
