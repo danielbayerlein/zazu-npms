@@ -1,0 +1,26 @@
+{
+  "name": "zazu-npms",
+  "version": "1.0.0",
+  "description": "Search for npm packages with npms.io",
+  "icon": "icon.png",
+  "blocks": {
+    "input": [
+      {
+        "id": "npms",
+        "type": "PrefixScript",
+        "prefix": "npm",
+        "space": true,
+        "args": "Required",
+        "script": "src/index.js",
+        "connections": ["Open"]
+      }
+    ],
+    "output": [
+      {
+        "id": "Open",
+        "type": "OpenInBrowser",
+        "url": "{value}"
+      }
+    ]
+  }
+}
