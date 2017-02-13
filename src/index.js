@@ -1,5 +1,3 @@
 const npms = require('./npms');
 
-module.exports = () => (
-  name => npms.search(name)
-);
+module.exports = () => name => npms.search(name);
