@@ -1,11 +1,14 @@
-# zazu-npms [![Build Status](https://travis-ci.org/danielbayerlein/zazu-npms.svg?branch=master)](https://travis-ci.org/danielbayerlein/zazu-npms)
+# zazu-npms
 
 > [Zazu](https://github.com/tinytacoteam/zazu) plugin to search for npm packages with [npms.io](https://npms.io/)
 
+[![Build Status](https://travis-ci.org/danielbayerlein/zazu-npms.svg?branch=master)](https://travis-ci.org/danielbayerlein/zazu-npms)
+[![codecov](https://codecov.io/gh/danielbayerlein/zazu-npms/branch/master/graph/badge.svg)](https://codecov.io/gh/danielbayerlein/zazu-npms)
+
 ## Usage
 
-To search npm simply type `npm` then the name of the package to search for. For
-example `npm pry`.
+To search packages simply type `npm` then the name of the package to search for.
+For example `npm pry`.
 
 ![screenshot](./screenshot.png)
 
