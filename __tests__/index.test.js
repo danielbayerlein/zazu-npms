@@ -4,14 +4,14 @@ const npms = require('../src/npms');
 describe('index.js', () => {
   beforeEach(() => {
     npms.search = jest.fn();
-    index()('zazu');
+    index()('git-pick');
   });
 
   afterEach(() => {
     jest.resetAllMocks();
   });
 
-  test('called npms.search with zazu', () => {
-    expect(npms.search).toBeCalledWith('zazu');
+  test('call npms.search with "git-pick"', () => {
+    expect(npms.search).toBeCalledWith('git-pick');
   });
 });
