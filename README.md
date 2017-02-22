@@ -14,7 +14,7 @@ For example `npm pry`.
 
 ## Install
 
-Add `danielbayerlein/zazu-npms` inside of plugins block of your `~/.zazurc.json` file.
+Add `danielbayerlein/zazu-npms` inside of `plugins` block of your `~/.zazurc.json` file.
 
 ```json
 {
