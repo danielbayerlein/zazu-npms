@@ -75,7 +75,7 @@ describe('npmjs.js', () => {
       })));
 
       return npms.search('git-pick')
-        .catch(() => {
+        .then(() => {
           // eslint-disable-next-line no-console
           expect(console.error).toHaveBeenCalledWith(
             '{"code":"INVALID_PARAMETER","message":"child "text" fails ' +
