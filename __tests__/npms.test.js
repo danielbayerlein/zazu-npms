@@ -12,6 +12,7 @@ describe('npmjs.js', () => {
     let cache;
 
     const mockResult = require('../__mocks__/result.json').results.map(result => ({
+      id: result.package.name,
       title: result.package.name,
       value: result.package.links.npm,
       subtitle: result.package.description,
@@ -52,6 +53,13 @@ describe('npmjs.js', () => {
       npms.search('git-pick')
         .then((packages) => {
           expect(packages).toBeInstanceOf(Array);
+        })
+      ));
+
+    test('returns the expected id', () => (
+      npms.search('git-pick')
+        .then((packages) => {
+          expect(packages[0].id).toBe('@danielbayerlein/git-pick');
         })
       ));
 
@@ -152,6 +160,12 @@ describe('npmjs.js', () => {
     test('returns an array', () => (
       searchResult.then((packages) => {
         expect(packages).toBeInstanceOf(Array);
+      })
+    ));
+
+    test('returns an object with a id', () => (
+      searchResult.then((packages) => {
+        expect(packages[0].id).toBeDefined();
       })
     ));
 

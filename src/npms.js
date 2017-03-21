@@ -30,6 +30,7 @@ module.exports.search = (query) => {
     got(URL, { json: true, query: { q: query, size: RESULT_ITEMS } })
       .then((response) => {
         const data = response.body.results.map(result => ({
+          id: result.package.name,
           title: result.package.name,
           value: result.package.links.npm,
           subtitle: result.package.description,
