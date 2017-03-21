@@ -1,6 +1,6 @@
 {
   "name": "zazu-npms",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Zazu plugin to search for npm packages with npms.io",
   "main": "src/index.js",
   "private": true,
