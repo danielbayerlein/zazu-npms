@@ -8,7 +8,7 @@
 ## Usage
 
 To search packages simply type `npm` then the name of the package to search for.
-For example `npm pry`.
+For example `npm preact`.
 
 ![screenshot](./screenshot.png)
 
