@@ -9,7 +9,7 @@ describe('npmjs.js', () => {
     let npms
     let cache
 
-    const mockResult = require('../__mocks__/result.json').results.map((result) => ({
+    const mockResult = require('../__mocks__/search.json').results.map((result) => ({
       id: result.package.name,
       title: result.package.name,
       value: result.package.links.npm,
@@ -27,7 +27,7 @@ describe('npmjs.js', () => {
       npms = require('../src/npms')
 
       got.mockImplementation(() => new Promise((resolve) => resolve({
-        body: require('../__mocks__/result.json')
+        body: require('../__mocks__/search.json')
       })))
     })
 
