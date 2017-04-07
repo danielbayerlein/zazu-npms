@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/danielbayerlein/zazu-npms.svg?branch=master)](https://travis-ci.org/danielbayerlein/zazu-npms)
 [![codecov](https://codecov.io/gh/danielbayerlein/zazu-npms/branch/master/graph/badge.svg)](https://codecov.io/gh/danielbayerlein/zazu-npms)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Greenkeeper badge](https://badges.greenkeeper.io/danielbayerlein/zazu-npms.svg)](https://greenkeeper.io/)
 
 ## Usage
 
