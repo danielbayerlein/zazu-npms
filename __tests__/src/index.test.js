@@ -1,5 +1,5 @@
-const index = require('../src/')
-const npms = require('../src/npms')
+const index = require('../../src/')
+const npms = require('../../src/npms')
 
 describe('index.js', () => {
   beforeEach(() => {

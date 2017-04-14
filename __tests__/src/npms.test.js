@@ -9,7 +9,7 @@ describe('npmjs.js', () => {
     let npms
     let cache
 
-    const mockResult = require('../__mocks__/search.json').results.map((result) => ({
+    const mockResult = require('../../__mocks__/search.json').results.map((result) => ({
       id: result.package.name,
       title: result.package.name,
       value: result.package.links.npm,
@@ -24,10 +24,10 @@ describe('npmjs.js', () => {
       cache = { get: jest.fn(), isExpired: jest.fn(), set: jest.fn() }
       require('cache-conf').mockImplementation(() => cache)
 
-      npms = require('../src/npms')
+      npms = require('../../src/npms')
 
       got.mockImplementation(() => new Promise((resolve) => resolve({
-        body: require('../__mocks__/search.json')
+        body: require('../../__mocks__/search.json')
       })))
     })
 
@@ -155,7 +155,7 @@ describe('npmjs.js', () => {
   describe('integration', () => {
     jest.mock('cache-conf')
 
-    const npms = require('../src/npms')
+    const npms = require('../../src/npms')
     const searchResult = npms.search('git-pick')
 
     test('returns an array', () => (
