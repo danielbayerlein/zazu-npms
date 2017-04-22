@@ -1,5 +1,7 @@
 # zazu-npms
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/danielbayerlein/zazu-npms.svg)](https://greenkeeper.io/)
+
 > [Zazu](https://github.com/tinytacoteam/zazu) plugin to search for npm packages with [npms.io](https://npms.io/)
 
 [![Build Status](https://travis-ci.org/danielbayerlein/zazu-npms.svg?branch=master)](https://travis-ci.org/danielbayerlein/zazu-npms)
