@@ -41,7 +41,8 @@ describe('npmjs.js', () => {
               query: {
                 q: 'git-pick',
                 size: 10
-              }
+              },
+              useElectronNet: false
             }
           )
         })
