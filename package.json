@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "cache-conf": "^0.6.0",
-    "got": "^8.0.1"
+    "got": "^9.0.0"
   },
   "jest": {
     "bail": true,
